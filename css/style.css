@@ -1,0 +1,25 @@
+img{
+	height: 400px;
+	width: 400px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.logo{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.connexion{
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	margin:auto;
+
+}
+
+.connexion-button{
+	width: 100px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
