@@ -31,3 +31,66 @@ input{
 	height: 30px;
 	margin-bottom: 10px;
 }
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-style: 18px;
+}
+
+header{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.header--border1{
+	border: 1px solid rgb(100, 100, 100, 0.5);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: rgb(44, 129, 218);
+	height: 5em; 
+}
+
+.header--border1 h1{
+	margin-left: 20%;
+	position: relative;
+	color: white;
+}
+
+.header--border2{
+	border: 1px solid rgb(100, 100, 100, 0.5);
+	background-color: rgb(248, 248, 248);
+	height: 3em;
+	position: relative;
+}
+
+.header--border2 button{
+	margin-left: 90%;
+	margin-top: 0.7em;
+}
+
+.logo-header{
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 10em;
+	height: 8em;
+	position: absolute;
+	left: 11%;
+	top: 0;
+}
+
+.border--logo{
+	border: 1px solid rgb(100, 100, 100, 0.5);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgb(251, 251, 251);
+	position: absolute;
+	width: 10em;
+	height: 8.5em;
+	left: 12%;
+	top: 0;
+
+}
+
