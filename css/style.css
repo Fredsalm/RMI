@@ -94,3 +94,32 @@ header{
 
 }
 
+.recherche{
+	display: flex;
+	margin-top: 50px;
+	margin-left: 130px;
+}
+
+.recherche-numero{
+	border:solid 1px black;
+	padding-top: 11px;
+	height: 27px;
+	background-color: rgb(44, 129, 218);
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.recherche-input{
+	border-radius: 0px;
+	border: 1px solid black;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	background-color: #e7e7e7;
+
+}
+
+.filtre{
+	display: flex;
+	text-align: left;
+	justify-content: flex-end;
+	margin-right: 125px;
+}	
