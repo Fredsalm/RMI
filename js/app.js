@@ -11,9 +11,9 @@ var client;
 		commande = data.commandes[i].numcommande
 		cptclient = data.commandes[i].numcptclient
 		client = data.commandes[i].nomclient
-		var chk = '<td><input type="checkbox"></td>'
+		var chk = '<td class="chk"><input type="checkbox"></td>'
 		var btn = '<td><button>Modifier</button></td>'
-		$('#tasty').append("<tr><td>"+date+"</td><td>"+commande+"</td><td>"+cptclient+"</td><td>"+client+"</td>"+chk+chk+chk+chk+chk+chk+btn+"</td></tr>")
+		$('#tableau').append('<tr><td class="ref">'+date+'</td><td class="ref">'+commande+'</td><td class="ref">'+cptclient+'</td><td class="ref">'+client+'</td>'+chk+chk+chk+chk+chk+chk+btn+'</td></tr>')
 		
 	}
 		// $('#template').html(Mustache.render($('#template').html(), {test : data.commandes} ))

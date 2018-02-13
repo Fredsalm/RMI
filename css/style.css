@@ -140,6 +140,34 @@ header{
 	margin-right: 125px;
 }	
 
+.tableau-content{
+	display: flex;
+	margin: auto;
+	width: 90%;
+	margin-top: 2em;
+}
+.tabl{
+	width: 100%;
+
+}
+tr{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+.ref{
+	display: flex;
+	border: 1px solid;
+	width: 100%;
+}
+.chk{
+	width: 20%;
+	border: 1px solid;
+}
+
+/*#btn-modif{
+	width: 5em;
+}*/
 /* fin page liste commande */
 
 .header--border3{
