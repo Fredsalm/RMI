@@ -1,3 +1,5 @@
+/*debut page connexion*/
+
 img{
 	height: 400px;
 	width: 400px;
@@ -26,6 +28,9 @@ img{
 	margin-left: auto;
 	margin-right: auto;
 }
+/*fin page connexion*/
+
+/*page liste commande */
 
 input{
 	height: 30px;
@@ -123,3 +128,5 @@ header{
 	justify-content: flex-end;
 	margin-right: 125px;
 }	
+
+/* fin page liste commande */
