@@ -28,10 +28,30 @@
 		<button class="filtre-hardware">Hardware</button>
 		<button class="filtre-logistique">Logistique</button>
 	</div>
-	<div class="tableau-content">
-		<table id="tableau" class="tabl">
-			
-		</table>
+	<div class="tableau-structure">
+		<div class="tableau-content">
+			<div class="titre-tableau">
+				<div class="titre-tableau--date">
+					Date
+				</div>
+				<div class="titre-tableau--commande">
+					No. Commande
+				</div>
+				<div class="titre-tableau--numclient">
+					No. Compte Client
+				</div>
+				<div class="titre-tableau--client">
+					Nom Client
+				</div>
+				<div class="titre-service">
+					ST / BCB / Crt / Parm / Prepa / Livr
+				</div>
+			</div>
+			<div>
+			<table id="tableau" class="tabl">
+			</table>
+			</div>
+		</div>
 	</div>
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>

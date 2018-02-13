@@ -75,14 +75,14 @@ header{
 	display: flex;
 }
 
-/*.header--border2 button{
+.header--border2 button{
 	margin-left: 90%;
 	margin-top: 0.7em;
 	margin-right: 5%;
 	margin-left-bottom: auto;
 	color: white;
 	background-color: rgb(44, 129, 218);
-}*/
+}
 
 
 .logo-header{
@@ -137,37 +137,67 @@ header{
 	display: flex;
 	text-align: left;
 	justify-content: flex-end;
-	margin-right: 125px;
+	margin-right: 155px;
 }	
+.titre-tableau--date{
+	margin-left: 50px;
+}
+
+.titre-tableau--commande{
+	margin-left: 75px;
+}
+
+.titre-tableau--numclient{
+	margin-right: 20px;
+}
+
+.titre-tableau--client{
+	margin-right: 50px;
+}
 
 .tableau-content{
-	display: flex;
 	margin: auto;
 	width: 90%;
-	margin-top: 2em;
 }
+
 .tabl{
 	width: 100%;
-
 }
+
 tr{
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
 }
+
 .ref{
 	display: flex;
 	border: 1px solid;
 	width: 100%;
 }
+
 .chk{
-	width: 20%;
+	width: 27%;
 	border: 1px solid;
 }
 
-/*#btn-modif{
-	width: 5em;
-}*/
+.titre-tableau{
+	display: inline-flex;
+	border:1px solid;
+	width: 92%;
+	justify-content: space-around;
+	background-color:#e7e7e7;
+	margin-bottom: none;
+}
+
+.titre-service{
+	display: inline-flex;
+}
+
+.tableau-structure{
+	flex-direction: column;
+}
+
 /* fin page liste commande */
 
 .header--border3{
