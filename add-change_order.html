@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Ajout/Modification Commande</title>
+	<title>Ajout/Modification de Commande</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -15,7 +15,6 @@
 		</div>
 		<div class="border--logo"></div>
 		<div class="logo-header"></div>
-	</header>
 		<div class="logo--header"></div>
 		<div class="header--border3">
 			<span>Bonjour<span id="user"></span>!</span>
@@ -24,7 +23,7 @@
 					<a href="statistics.html"><i class="fas fa-chart-bar fa-2x"></i></a>
 				</li>
 				<li>
-					<a href=""><i class="fas fa-cog fa-2x"></i></a>
+					<a href="admin.html"><i class="fas fa-cog fa-2x"></i></a>
 				</li>
 				<li>
 					<a href="connexion.html"><i class="fas fa-sign-out-alt fa-2x"></i></a>
@@ -34,8 +33,8 @@
 	</header>
 	<main>
 		<div class="main--title">
-			<h2>Ajout/Suppression Commande</h2>
-			<button>Retour</button>
+			<h2>Ajout/Suppression de Commande</h2>
+			<a href="liste-commandes.html"><button>Retour</button></a>	
 		</div>	
 		<form action="">
 			<fieldset>
@@ -43,77 +42,100 @@
 					<div class="line">
 						<div class="block">
 							<label for="">Date</label>
-							<input type="text" name="" id=""/>
+							<input class="input--modification" type="text" name="" id="" value=""/>
 						</div>
 						<div class="block">
 							<label for="">Num Commande</label>
-							<input type="text" name="" id=""/>
+							<input class="input--modification" type="text" name="" id="" value=""/>
 						</div>
 						<div class="block">
 							<label for="">Num Compte Client</label>
-							<input type="text" name="" id=""/>
+							<input class="input--modification" type="text" name="" id="" value=""/>
 						</div>
 						<div class="block">
 							<label for="">Nom Client</label>
-							<input type="text" name="" id=""/>
+							<input class="input--modification" type="text" name="" id="" value=""/>
 						</div>
 						<div class="block">
 							<label for="">Commercial/Rev</label>
-							<input type="text" name="" id=""/>
+							<input class="input--modification" type="text" name="" id="" value=""/>
 						</div>
 					</div>
 					<div class="line">
 						<div>
 							<label for="">Urgence</label>
-							<input type="text" name="" id=""/>
+							<input class="input--modification" type="text" name="" id="" value=""/>
 						</div>
 						<div>
 							<label for="">Info</label>
-							<input type="text" name="" id=""/>
+							<input class="input--modification" type="text" name="" id="" value=""/>
 						</div>
 						<div>
 							<label for="">Eligible S/T</label>
-							<input type="text" name="" id=""/>
+							<select class="select--change">
+								<option class="select--yes" value="#">Oui</option>
+								<option class="select--no" value="#">Non</option>
+							</select>
 						</div>
 						<div>
 							<label for="">Validation S/T</label>
-							<input type="text" name="" id=""/>
+							<select class="select--change">
+								<option class="select--yes" value="#">Oui</option>
+								<option class="select--no" value="#">Non</option>
+							</select>
 						</div>
 						<div>
 							<label for="">Réception BCB</label>
-							<input type="text" name="" id=""/>
+							<select class="select--change">
+								<option class="select--received" value="#">Reçu</option>
+								<option class="select--noreceived" value="#">Non-reçu</option>
+							</select>
 						</div>
 					</div>	
 					<div class="line">
 						<div>
 							<label for="">Transfert</label>
-							<input type="text" name="" id=""/>
+							<input class="input--modification" type="text" name="" id="" value=""/>
 						</div>
 						<div>
 							<label for="">Couleur Etui</label>
-							<input type="text" name="" id=""/>
+							<select class="select--change">
+								<option class="select--green" value="#">Vert</option>
+								<option class="select--yellow" value="#">Jaune</option>
+								<option class="select--red" value="#">Rouge</option>
+								<option class="select--black" value="#">Noir</option>
+							</select>
 						</div>
 						<div>
 							<label for="">Crédit</label>
-							<input type="text" name="" id=""/>
+							<input class="input--modification" type="text" name="" id="" value=""/>
 						</div>
 						<div>
 							<label for="">Essai</label>
-							<input type="text" name="" id=""/>
+							<select class="select--change">
+								<option class="select--yes" value="#">Oui</option>
+								<option class="select--no" value="#">Non</option>
+							</select>
 						</div>
 						<div>
 							<label for="">Dest'Livraison</label>
-							<input type="text" name="" id=""/>
+							<input class="input--modification" type="text" name="" id="" value=""/>
 						</div>
 					</div>
 					<div class="line--last"></div>	
 						<div>
 							<label for="">Eko/Simply</label>
-							<input type="text" name="" id=""/>
+							<select class="select--change">
+								<option class="select--eko" value="#">Eko</option>
+								<option class="select--simply" value="#">Simply</option>
+							</select>
 						</div>
 						<div>
 							<label for="">Dom-Tom</label>
-							<input type="text" name="" id=""/>
+							<select class="select--change">
+								<option class="select--yes" value="#">Oui</option>
+								<option class="select--no" value="#">Non</option>
+							</select>
 						</div>
 				</div>
 			</fieldset>
@@ -121,11 +143,11 @@
 				<div>
 					<div>
 						<label for="">Param'</label>
-						<input type="text" name="" id=""/>
+						<input class="input--modification" type="text" name="" id="" value=""/>
 					</div>
 					<div>
 						<label for="">Technicien</label>
-						<input type="text" name="" id=""/>
+						<input class="input--modification" type="text" name="" id="" value=""/>
 					</div>
 				</div>
 			</fieldset>
@@ -133,11 +155,11 @@
 				<div>
 					<div>
 						<label for="">Prépa</label>
-						<input type="text" name="" id=""/>
+						<input class="input--modification" type="text" name="" id="" value=""/>
 					</div>
 					<div>
 						<label for="">Technicien</label>
-						<input type="text" name="" id=""/>
+						<input class="input--modification" type="text" name="" id="" value=""/>
 					</div>
 				</div>
 			</fieldset>	
@@ -145,15 +167,15 @@
 				<div>
 					<div>
 						<label for="">Num Tracking</label>
-						<input type="text" name="" id=""/>
+						<input class="input--modification" type="text" name="" id="" value=""/>
 					</div>
 					<div>
 						<label for="">Date Expiration</label>
-						<input type="text" name="" id=""/>
+						<input class="input--modification" type="text" name="" id="" value=""/>
 					</div>
 					<div>
 						<label for="">Num Track Retour</label>
-						<input type="text" name="" id=""/>
+						<input class="input--modification" type="text" name="" id="" value=""/>
 					</div>
 				</div>
 			</fieldset>	

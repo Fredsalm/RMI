@@ -1,4 +1,10 @@
-/*debut page connexion*/
+body{
+	margin: 0;
+	padding: 0;
+	font-style: 18px;
+}
+
+/*PAGE DE CONNEXION*/
 
 .logo-img{
 	height: 400px;
@@ -15,40 +21,46 @@
 .connexion{
 	display: flex;
 	flex-direction: column;
-	width: 200px;
+	width: 245px;
 	margin:auto;
 
 }
 
 .connexion-button{
-	width: 100px;
-	height: 25px;
 	margin-top: 30px;
-	margin-bottom: 50px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 70.5px;
+	margin-right: 70.5px;
 }
-/*fin page connexion*/
+/*PAGE DE CONNEXION*/
 
-/*page liste commande */
+/*AJOUT/MODIFICATION COMMANDE*/
 
-input{
+.input--modification{
 	height: 30px;
 	margin-bottom: 10px;
 }
 
-
-body{
-	margin: 0;
-	padding: 0;
-	/*margin: auto;*/
-	/*max-width: 1000px;*/
-	font-style: 18px;
+.logo-header{
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 10em;
+	height: 8em;
+	position: absolute;
+	left: 1%;
+	top: 0;
 }
 
-header{
-	/*margin-left: 15%;
-	margin-right: 15%;*/
+.border--logo{
+	border: 1px solid rgb(100, 100, 100, 0.5);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgb(251, 251, 251);
+	position: absolute;
+	width: 10em;
+	height: 8.5em;
+	left: 2%;
+	top: 0;
 }
 
 .header--border1{
@@ -60,7 +72,6 @@ header{
 }
 
 .header--border1 h1{
-	/*margin-left: 20%;*/
 	text-align: center;
 	position: relative;
 	color: white;
@@ -84,20 +95,7 @@ header{
 	background-color: rgb(44, 129, 218);
 }
 
-
-.logo-header{
-
-	background-image: url('../img/logo.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 10em;
-	height: 8em;
-	position: absolute;
-	left: 1%;
-	top: 0;
-}
-
-.border--logo{
+.header--border3{
 	border: 1px solid rgb(100, 100, 100, 0.5);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
@@ -105,10 +103,106 @@ header{
 	position: absolute;
 	width: 10em;
 	height: 8.5em;
-	left: 2%;
+	right: 2%;
 	top: 0;
+	display: inline-flex;
+}
+
+
+.header--border3 ul li{
+	list-style: none;
+	justify-content: space-around;
+}
+
+.header--border3 ul li a i{
 
 }
+
+.main--title{
+	/*display: flex;
+	flex-direction: row;*/
+	/*margin-left: 0;
+	margin-right: 0;*/
+	display: inline;
+}
+
+.main--title h2{
+}
+
+.main--title a button{
+	/*float: right;*/
+	color: white;
+	background-color: rgb(44, 129, 218);
+}
+
+.line{
+	display: inline-flex;
+}
+
+.line--last{
+	display: inline-flex;
+}
+
+
+.block label{
+
+}
+
+.block input{
+
+}
+
+.block label input{
+
+}
+
+.select--change{
+
+}
+
+.select--yes{
+
+}
+
+.select--no{
+
+}
+
+.select--received{
+
+}
+
+.select--noreceived{
+
+}
+
+.select--green{
+
+}
+
+.select--yellow{
+	
+}
+
+.select--red{
+	
+}
+
+.select--black{
+	
+}
+
+.select--eko{
+
+}
+
+.select--simply{
+	
+}
+
+/*AJOUT/MODIFICATION COMMANDE*/
+
+/*LISE-COMMANDES*/
 
 .recherche{
 	display: flex;
@@ -198,82 +292,74 @@ tr{
 	flex-direction: column;
 }
 
-/* fin page liste commande */
+/*LISE-COMMANDES*/
 
-.header--border3{
-	border: 1px solid rgb(100, 100, 100, 0.5);
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background-color: rgb(251, 251, 251);
-	position: absolute;
-	width: 10em;
-	height: 8.5em;
-	right: 2%;
-	top: 0;
-	/*display: inline-flex;*/
-	display: inline-flex;
+.main{
+ display: inline-flex;
+ margin-bottom: 1em;
+ margin-right: 1em;
+ margin-left: 1em;
+ border: 2px outset black;
 }
 
-.header--border3 span{
-
+.main-lateral{
+ border-right: 2px solid black;
+ width: 300px;
+ height: 600px;
 }
 
-.header--border3 ul{
-	/*margin-left: ;
-	margin-right: ;*/
-	/*display: flex;*/
+.main-lateral,ul{
+ list-style: none;  
 }
 
-.header--border3 ul li{
-	list-style: none;
-	justify-content: space-around;
+.main-lateral, li{
+ font-size: medium;
+ line-height: 2;
 }
 
-.header--border3 ul li a i{
-
+.title-statistiques, .panel-admin{
+ font-size: 3em;
+text-align: center;
 }
 
-.main--title{
-	display: inline-flex;
+.main-image-stat{
+ background-image: url('../img/image-statistiques.png');
+ background-repeat: no-repeat;
+ background-size: 80% 80%;
+ background-position: center;
+ width: 970px;
+ height: 600px;
 }
 
-.main--title button{
-	/*margin-right: 5%;*/
-	/*margin-left-bottom: auto;*/
-	color: white;
-	background-color: rgb(44, 129, 218);
+.sous-titre-statistiques{
+ line-height: 1;
+ font-size: 2em;
+ margin-left: 1em;
+ background-color: #e0e0d1
+;
+ margin-bottom: 1em;
 }
 
-.line{
-	display: inline-flex;
+.main-lateral-calendrier{
+ background-image: url('../img/calendrier.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ width: 270px;
+ height: 270px;
+ margin-bottom: 1em;
+margin-left: 1.2em;
+ 
 }
 
-.line--last{
-	display: inline-flex;
+.main-admin{
+ border: solid;
+ width: 100vw;
+ height: 100vh;
+ background-image: url('../img/panel-admin.png');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 90% 90%;
 }
 
-
-.fieldset--last{
-
-}
-
-.block{
-	/*width: 10em;
-	height: 5em;*/
-	/*display: block;*/
-}
-
-.block label{
-
-}
-
-.block input{
-
-}
-
-.block label input{
-	display: 
-}
-
-/*Antoine*/
-
+   /*Ana*/
