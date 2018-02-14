@@ -1,5 +1,4 @@
-/*debut page connexion*/
-
+/*FRED*/
 .logo-img{
 	height: 400px;
 	width: 400px;
@@ -41,14 +40,11 @@ input{
 body{
 	margin: 0;
 	padding: 0;
-	/*margin: auto;*/
-	/*max-width: 1000px;*/
 	font-style: 18px;
 }
 
 header{
-	/*margin-left: 15%;
-	margin-right: 15%;*/
+
 }
 
 .header--border1{
@@ -60,7 +56,6 @@ header{
 }
 
 .header--border1 h1{
-	/*margin-left: 20%;*/
 	text-align: center;
 	position: relative;
 	color: white;
@@ -75,21 +70,17 @@ header{
 	display: flex;
 }
 
-/*.header--border2 button{
-	margin-left: 90%;
-	margin-top: 0.7em;
-	margin-right: 5%;
-	margin-left-bottom: auto;
-	color: white;
-	background-color: rgb(44, 129, 218);
-}*/
+.header--border2 button{
+	
+}
 
 
-.logo-header{
+.logo--header{
 
 	background-image: url('../img/logo.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	width: 10em;
 	height: 8em;
 	position: absolute;
@@ -146,10 +137,12 @@ header{
 	width: 90%;
 	margin-top: 2em;
 }
+
 .tabl{
 	width: 100%;
 
 }
+
 tr{
 	display: flex;
 	width: 100%;
@@ -164,10 +157,6 @@ tr{
 	width: 20%;
 	border: 1px solid;
 }
-
-/*#btn-modif{
-	width: 5em;
-}*/
 /* fin page liste commande */
 
 .header--border3{
@@ -180,7 +169,6 @@ tr{
 	height: 8.5em;
 	right: 2%;
 	top: 0;
-	/*display: inline-flex;*/
 	display: inline-flex;
 }
 
@@ -189,9 +177,7 @@ tr{
 }
 
 .header--border3 ul{
-	/*margin-left: ;
-	margin-right: ;*/
-	/*display: flex;*/
+
 }
 
 .header--border3 ul li{
@@ -208,8 +194,6 @@ tr{
 }
 
 .main--title button{
-	/*margin-right: 5%;*/
-	/*margin-left-bottom: auto;*/
 	color: white;
 	background-color: rgb(44, 129, 218);
 }
@@ -227,9 +211,7 @@ tr{
 }
 
 .block{
-	/*width: 10em;
-	height: 5em;*/
-	/*display: block;*/
+
 }
 
 .block label{
@@ -241,7 +223,7 @@ tr{
 }
 
 .block label input{
-	display: 
+
 }
 
 /*Antoine*/
