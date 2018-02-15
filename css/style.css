@@ -132,6 +132,8 @@ body{
 
 .title--page{
 	float: left;
+	margin-left: 400px;
+	/*text-align: center;*/
 }
 
 .return{
