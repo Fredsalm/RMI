@@ -1,10 +1,14 @@
+html {
+	font-size: 62.5%;
+}
+
 body{
 	margin: 0;
 	padding: 0;
-	font-style: 18px;
+	font-size: 1.8rem;
 }
 
-/*PAGE DE CONNEXION*/
+/*START PAGE DE CONNEXION*/
 
 .logo-img{
 	height: 400px;
@@ -31,9 +35,9 @@ body{
 	margin-left: 70.5px;
 	margin-right: 70.5px;
 }
-/*PAGE DE CONNEXION*/
+/*END PAGE DE CONNEXION*/
 
-/*AJOUT/MODIFICATION COMMANDE*/
+/* START PAGE AJOUT/MODIFICATION COMMANDE*/
 
 .input--modification{
 	height: 30px;
@@ -114,15 +118,9 @@ body{
 	display: inline-block
 }
 
-.header--border3 ul li a i{
-
-}
 
 .main--title{
-	/*display: flex;
-	flex-direction: row;*/
-	/*margin-left: 0;
-	margin-right: 0;*/
+	
 	display: inline;
 }
 
@@ -130,7 +128,6 @@ body{
 }
 
 .main--title a button{
-	/*float: right;*/
 	color: white;
 	background-color: rgb(44, 129, 218);
 }
@@ -144,23 +141,11 @@ fieldset{
 	height: 115px;
 }
 
-.fieldset2--size{
-}
-
-.fieldset3--size{
-}
 
 .line--position{
 	display: flex;
 	justify-content: space-between;
 }
-
-.line{
-}
-
-/*.line--last{
-	display: inline-flex;
-}*/
 
 .block{
 	display: block;
@@ -194,46 +179,6 @@ fieldset{
 	margin-bottom: 2px;
 }
 
-.select--yes{
-
-}
-
-.select--no{
-
-}
-
-.select--received{
-
-}
-
-.select--noreceived{
-
-}
-
-.select--green{
-
-}
-
-.select--yellow{
-	
-}
-
-.select--red{
-	
-}
-
-.select--black{
-	
-}
-
-.select--eko{
-
-}
-
-.select--simply{
-	
-}
-
 .validate{
 	border-radius: 0px;
 	border: 1px solid black;
@@ -241,9 +186,9 @@ fieldset{
 	margin-bottom: 2em;
 }
 
-/*AJOUT/MODIFICATION COMMANDE*/
+/* END-PAGE AJOUT/MODIFICATION COMMANDE*/
 
-/*LISE-COMMANDES*/
+/*START LISE-COMMANDES*/
 
 .recherche{
 	display: flex;
@@ -333,9 +278,9 @@ tr{
 	flex-direction: column;
 }
 
-/*LISE-COMMANDES*/
+/*END PAGE LISE-COMMANDES*/
 
-/*STATISTIQUES*/
+/*START STATISTIQUES*/
 
 .main{
  display: inline-flex;
@@ -404,4 +349,4 @@ margin-left: 1.2em;
  background-size: 90% 90%;
 }
 
-/*STATISTIQUES*/
+/*END PAGE STATISTIQUES*/
