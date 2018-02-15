@@ -1,4 +1,11 @@
 /*FRED*/
+body{
+	margin: 0;
+	padding: 0;
+	font-style: 18px;
+}
+
+/*PAGE DE CONNEXION*/
 .logo-img{
 	height: 400px;
 	width: 400px;
@@ -14,37 +21,50 @@
 .connexion{
 	display: flex;
 	flex-direction: column;
-	width: 200px;
+	width: 245px;
 	margin:auto;
 
 }
 
 .connexion-button{
-	width: 100px;
-	height: 25px;
 	margin-top: 30px;
-	margin-bottom: 50px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 70.5px;
+	margin-right: 70.5px;
 }
-/*fin page connexion*/
+/*PAGE DE CONNEXION*/
 
-/*page liste commande */
+/*AJOUT/MODIFICATION COMMANDE*/
 
-input{
+.input--modification{
 	height: 30px;
 	margin-bottom: 10px;
 }
 
-
-body{
-	margin: 0;
-	padding: 0;
-	font-style: 18px;
-}
-
 header{
 
+}
+
+.logo-header{
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 10em;
+	height: 8em;
+	position: absolute;
+	left: 1%;
+	top: 0;
+}
+
+.border--logo{
+	border: 1px solid rgb(100, 100, 100, 0.5);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgb(251, 251, 251);
+	position: absolute;
+	width: 10em;
+	height: 8.5em;
+	left: 2%;
+	top: 0;
 }
 
 .header--border1{
@@ -86,9 +106,15 @@ header{
 	position: absolute;
 	left: 1%;
 	top: 0;
+	margin-left: 90%;
+	margin-top: 0.7em;
+	margin-right: 5%;
+	margin-left-bottom: auto;
+	color: white;
+	background-color: rgb(44, 129, 218);
 }
 
-.border--logo{
+.header--border3{
 	border: 1px solid rgb(100, 100, 100, 0.5);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
@@ -96,10 +122,106 @@ header{
 	position: absolute;
 	width: 10em;
 	height: 8.5em;
-	left: 2%;
+	right: 2%;
 	top: 0;
+	display: inline-flex;
+}
+
+
+.header--border3 ul li{
+	list-style: none;
+	justify-content: space-around;
+}
+
+.header--border3 ul li a i{
 
 }
+
+.main--title{
+	/*display: flex;
+	flex-direction: row;*/
+	/*margin-left: 0;
+	margin-right: 0;*/
+	display: inline;
+}
+
+.main--title h2{
+}
+
+.main--title a button{
+	/*float: right;*/
+	color: white;
+	background-color: rgb(44, 129, 218);
+}
+
+.line{
+	display: inline-flex;
+}
+
+.line--last{
+	display: inline-flex;
+}
+
+
+.block label{
+
+}
+
+.block input{
+
+}
+
+.block label input{
+
+}
+
+.select--change{
+
+}
+
+.select--yes{
+
+}
+
+.select--no{
+
+}
+
+.select--received{
+
+}
+
+.select--noreceived{
+
+}
+
+.select--green{
+
+}
+
+.select--yellow{
+	
+}
+
+.select--red{
+	
+}
+
+.select--black{
+	
+}
+
+.select--eko{
+
+}
+
+.select--simply{
+	
+}
+
+/*AJOUT/MODIFICATION COMMANDE*/
+
+/*LISE-COMMANDES*/
 
 .recherche{
 	display: flex;
@@ -128,19 +250,31 @@ header{
 	display: flex;
 	text-align: left;
 	justify-content: flex-end;
-	margin-right: 125px;
+	margin-right: 155px;
 }	
+.titre-tableau--date{
+	margin-left: 50px;
+}
+
+.titre-tableau--commande{
+	margin-left: 75px;
+}
+
+.titre-tableau--numclient{
+	margin-right: 20px;
+}
+
+.titre-tableau--client{
+	margin-right: 50px;
+}
 
 .tableau-content{
-	display: flex;
 	margin: auto;
 	width: 90%;
-	margin-top: 2em;
 }
 
 .tabl{
 	width: 100%;
-
 }
 
 tr{
@@ -148,15 +282,18 @@ tr{
 	width: 100%;
 	justify-content: space-around;
 }
+
 .ref{
 	display: flex;
 	border: 1px solid;
 	width: 100%;
 }
+
 .chk{
-	width: 20%;
+	width: 27%;
 	border: 1px solid;
 }
+<<<<<<< HEAD
 /* fin page liste commande */
 
 .header--border3{
@@ -169,62 +306,123 @@ tr{
 	height: 8.5em;
 	right: 2%;
 	top: 0;
+=======
+
+.titre-tableau{
+>>>>>>> 5be8defdd710cc828ead6845e72e6bd0f39f7c2f
 	display: inline-flex;
+	border:1px solid;
+	width: 92%;
+	justify-content: space-around;
+	background-color:#e7e7e7;
+	margin-bottom: none;
 }
 
+<<<<<<< HEAD
 .header--border3 span{
 
 }
 
 .header--border3 ul{
 
-}
-
-.header--border3 ul li{
-	list-style: none;
-	justify-content: space-around;
-}
-
-.header--border3 ul li a i{
-
-}
-
-.main--title{
+=======
+.titre-service{
 	display: inline-flex;
+>>>>>>> 5be8defdd710cc828ead6845e72e6bd0f39f7c2f
 }
 
+.tableau-structure{
+	flex-direction: column;
+}
+
+/*LISE-COMMANDES*/
+
+.main{
+ display: inline-flex;
+ margin-bottom: 1em;
+ margin-right: 1em;
+ margin-left: 1em;
+ border: 2px outset black;
+}
+
+.main-lateral{
+ border-right: 2px solid black;
+ width: 300px;
+ height: 600px;
+}
+
+<<<<<<< HEAD
 .main--title button{
 	color: white;
 	background-color: rgb(44, 129, 218);
+=======
+.main-lateral,ul{
+ list-style: none;  
+>>>>>>> 5be8defdd710cc828ead6845e72e6bd0f39f7c2f
 }
 
-.line{
-	display: inline-flex;
+.main-lateral, li{
+ font-size: medium;
+ line-height: 2;
 }
 
-.line--last{
-	display: inline-flex;
+.title-statistiques, .panel-admin{
+ font-size: 3em;
+text-align: center;
 }
 
-.fieldset--last{
-
+.main-image-stat{
+ background-image: url('../img/image-statistiques.png');
+ background-repeat: no-repeat;
+ background-size: 80% 80%;
+ background-position: center;
+ width: 970px;
+ height: 600px;
 }
 
+<<<<<<< HEAD
 .block{
 
 }
 
 .block label{
 
+=======
+.sous-titre-statistiques{
+ line-height: 1;
+ font-size: 2em;
+ margin-left: 1em;
+ background-color: #e0e0d1
+;
+ margin-bottom: 1em;
+>>>>>>> 5be8defdd710cc828ead6845e72e6bd0f39f7c2f
 }
 
-.block input{
-
+.main-lateral-calendrier{
+ background-image: url('../img/calendrier.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ width: 270px;
+ height: 270px;
+ margin-bottom: 1em;
+margin-left: 1.2em;
+ 
 }
 
+<<<<<<< HEAD
 .block label input{
 
+=======
+.main-admin{
+ border: solid;
+ width: 100vw;
+ height: 100vh;
+ background-image: url('../img/panel-admin.png');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 90% 90%;
+>>>>>>> 5be8defdd710cc828ead6845e72e6bd0f39f7c2f
 }
 
-/*Antoine*/
-
+   /*Ana*/

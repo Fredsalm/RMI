@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Liste de Commande</title>
+	<title>Statistics</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<!-- Antoine -->
 	<header>		
 		<div class="header--border1">
 			<h1>Gestionnaire de commande</h1>
@@ -30,48 +31,32 @@
 			</ul>
 		</div>
 	</header>
-	<main>
+		
+
+	<!-- Antoine -->
+
+	<!--Ana -->
+	<!-- <h1 class="title-statistiques"></h1> -->
+	<main class="main">
 		<div class="main--title">
-			<h2>Liste de Commande</h2>
-		</div>	
-		<div class="recherche">
-			<div class="recherche-numero">
-				N° Commande:
-			</div>
-			<input class="recherche-input" type="text" name="recherche" placeholder="Recherche">
+			<h2>Statistiques</h2>
+			<a href="liste-commandes.html"><button>Retour</button></a>
 		</div>
-		<div class="filtre">
-			<button class="filtre-adv">ADV</button>
-			<button class="filtre-parametrage">Parametrage</button>
-			<button class="filtre-hardware">Hardware</button>
-			<button class="filtre-logistique">Logistique</button>
+		<div class="main-lateral">
+			<p class="sous-titre-statistiques">Lorem ipsum</p>
+			<ul>
+				<li><input type="checkbox" name="choix1" value="1" checked>Lorem ipsum</li>
+				<li><input type="checkbox" name="choix1" value="1" checked>Lorem ipsum</li>
+				<li><input type="checkbox" name="choix1" value="1" checked>Lorem ipsum</li>
+				<li><input type="checkbox" name="choix1" value="1" checked>Lorem ipsum</li>
+				<li><input type="checkbox" name="choix1" value="1" checked>Lorem ipsum</li>
+				<li><input type="checkbox" name="choix1" value="1" checked>Lorem ipsum</li>
+			</ul>
+			<div class='main-lateral-calendrier'></div>
 		</div>
-		<div class="tableau-structure">
-			<div class="tableau-content">
-				<div class="titre-tableau">
-					<div class="titre-tableau--date">
-						Date
-					</div>
-					<div class="titre-tableau--commande">
-						No. Commande
-					</div>
-					<div class="titre-tableau--numclient">
-						No. Compte Client
-					</div>
-					<div class="titre-tableau--client">
-						Nom Client
-					</div>
-					<div class="titre-service">
-						ST / BCB / Crt / Parm / Prepa / Livr
-					</div>
-				</div>
-				<div>
-				<table id="tableau" class="tabl">
-				</table>
-				</div>
-			</div>
-		</div>
-	</main>	
+		<div class="main-image-stat"></div>
+	</main>
+	<!--Ana -->
 	<script defer src="css/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.js"></script>
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
