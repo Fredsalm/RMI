@@ -1,4 +1,3 @@
-/*FRED*/
 body{
 	margin: 0;
 	padding: 0;
@@ -6,6 +5,7 @@ body{
 }
 
 /*PAGE DE CONNEXION*/
+
 .logo-img{
 	height: 400px;
 	width: 400px;
@@ -38,10 +38,6 @@ body{
 .input--modification{
 	height: 30px;
 	margin-bottom: 10px;
-}
-
-header{
-
 }
 
 .logo-header{
@@ -91,21 +87,6 @@ header{
 }
 
 .header--border2 button{
-	
-}
-
-
-.logo--header{
-
-	background-image: url('../img/logo.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	width: 10em;
-	height: 8em;
-	position: absolute;
-	left: 1%;
-	top: 0;
 	margin-left: 90%;
 	margin-top: 0.7em;
 	margin-right: 5%;
@@ -124,13 +105,13 @@ header{
 	height: 8.5em;
 	right: 2%;
 	top: 0;
-	display: inline-flex;
+	display: inline-block;
 }
 
 
 .header--border3 ul li{
 	list-style: none;
-	justify-content: space-around;
+	display: inline-block
 }
 
 .header--border3 ul li a i{
@@ -154,29 +135,63 @@ header{
 	background-color: rgb(44, 129, 218);
 }
 
+fieldset{
+	background-color: rgba(100, 100, 100, 0.1);
+}
+
+.fieldset1--size{
+	width: 300px;
+	height: 115px;
+}
+
+.fieldset2--size{
+}
+
+.fieldset3--size{
+}
+
+.line--position{
+	display: flex;
+	justify-content: space-between;
+}
+
 .line{
-	display: inline-flex;
 }
 
-.line--last{
+/*.line--last{
 	display: inline-flex;
-}
+}*/
 
+.block{
+	display: block;
+}
 
 .block label{
-
+	display: block;
+	width: 200px;
+	border: 1px solid black;
+	background-color: grey;
+	margin-bottom: 2px;
 }
 
 .block input{
+	width: 200px;
+	height: 20px;
+	border-radius: 0px;
+	border: 1px solid black;
+}
 
+.block select{
+	border-radius: 0px;
+	border: 1px solid black;
+	width: 200px;
 }
 
 .block label input{
-
 }
 
 .select--change{
-
+	margin-bottom: 2px;
 }
 
 .select--yes{
@@ -217,6 +232,13 @@ header{
 
 .select--simply{
 	
+}
+
+.validate{
+	border-radius: 0px;
+	border: 1px solid black;
+	margin-top: 1em;
+	margin-bottom: 2em;
 }
 
 /*AJOUT/MODIFICATION COMMANDE*/
@@ -293,23 +315,8 @@ tr{
 	width: 27%;
 	border: 1px solid;
 }
-<<<<<<< HEAD
-/* fin page liste commande */
-
-.header--border3{
-	border: 1px solid rgb(100, 100, 100, 0.5);
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background-color: rgb(251, 251, 251);
-	position: absolute;
-	width: 10em;
-	height: 8.5em;
-	right: 2%;
-	top: 0;
-=======
 
 .titre-tableau{
->>>>>>> 5be8defdd710cc828ead6845e72e6bd0f39f7c2f
 	display: inline-flex;
 	border:1px solid;
 	width: 92%;
@@ -318,17 +325,8 @@ tr{
 	margin-bottom: none;
 }
 
-<<<<<<< HEAD
-.header--border3 span{
-
-}
-
-.header--border3 ul{
-
-=======
 .titre-service{
 	display: inline-flex;
->>>>>>> 5be8defdd710cc828ead6845e72e6bd0f39f7c2f
 }
 
 .tableau-structure{
@@ -336,6 +334,8 @@ tr{
 }
 
 /*LISE-COMMANDES*/
+
+/*STATISTIQUES*/
 
 .main{
  display: inline-flex;
@@ -351,14 +351,8 @@ tr{
  height: 600px;
 }
 
-<<<<<<< HEAD
-.main--title button{
-	color: white;
-	background-color: rgb(44, 129, 218);
-=======
 .main-lateral,ul{
  list-style: none;  
->>>>>>> 5be8defdd710cc828ead6845e72e6bd0f39f7c2f
 }
 
 .main-lateral, li{
@@ -380,14 +374,6 @@ text-align: center;
  height: 600px;
 }
 
-<<<<<<< HEAD
-.block{
-
-}
-
-.block label{
-
-=======
 .sous-titre-statistiques{
  line-height: 1;
  font-size: 2em;
@@ -395,7 +381,6 @@ text-align: center;
  background-color: #e0e0d1
 ;
  margin-bottom: 1em;
->>>>>>> 5be8defdd710cc828ead6845e72e6bd0f39f7c2f
 }
 
 .main-lateral-calendrier{
@@ -410,10 +395,6 @@ margin-left: 1.2em;
  
 }
 
-<<<<<<< HEAD
-.block label input{
-
-=======
 .main-admin{
  border: solid;
  width: 100vw;
@@ -422,7 +403,6 @@ margin-left: 1.2em;
  background-repeat: no-repeat;
  background-position: center;
  background-size: 90% 90%;
->>>>>>> 5be8defdd710cc828ead6845e72e6bd0f39f7c2f
 }
 
-   /*Ana*/
+/*STATISTIQUES*/
