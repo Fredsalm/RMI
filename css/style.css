@@ -131,6 +131,22 @@ body{
 .main--title a button{
 	color: white;
 	background-color: rgb(44, 129, 218);
+	display:  inline-flex;
+}
+
+.title--page{
+	float: left;
+}
+
+.return{
+	float: right;
+	margin-top: 1.5em;
+	margin-right: 1em;
+}
+
+.return a{
+	text-decoration: none;
+	color: black;	
 }
 
 fieldset{
@@ -185,6 +201,9 @@ fieldset{
 	border: 1px solid black;
 	margin-top: 1em;
 	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 /* END-PAGE AJOUT/MODIFICATION COMMANDE*/
