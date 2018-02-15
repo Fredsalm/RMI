@@ -349,4 +349,26 @@ margin-left: 1.2em;
  background-size: 90% 90%;
 }
 
+/* Flo JS*/
+.step{
+	display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border:1px solid;
+
+}
+.step.ok {
+	background-color: green;	
+}
+.step.wait {
+	background-color: red;	
+}
+.hide {
+	display: none;
+}
+.active{
+	font-size: 0.7em;
+	background-color: #E1DCD5;
+}
 /*END PAGE STATISTIQUES*/
