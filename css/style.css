@@ -258,7 +258,7 @@ tr{
 }
 
 .chk{
-	width: 27%;
+	width: 190%;
 	border: 1px solid;
 }
 
@@ -358,6 +358,8 @@ margin-left: 1.2em;
 
 /* Flo JS*/
 .step{
+	margin-left: 10px;
+	margin-right: 30px;
 	display: inline-block;
     width: 13px;
     height: 13px;
