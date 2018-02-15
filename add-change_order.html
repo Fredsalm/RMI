@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<title>Ajout/Modification | Gestion de commande RM Ingénieurie</title>
-		<meta name="viewport" content="width=device-width;initial-scale=1.0">
+<!-- 		<meta name="viewport" content="width=device-width;initial-scale=1.0"> -->
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
@@ -39,14 +39,23 @@
 
 		</header>
 		
-		<main>
+		<main id="modif-commande" class="tpl">
+		{{#test}}
 			<div class="main--title">
+<<<<<<< HEAD
 				<div class="title--page">
 					<h2>Ajout/Suppression de Commande</h2>
 				</div>
 				<div class="return">
 					 <a href="liste-commandes.html"><i class="fas fa-reply fa-2x"></i></a>
 				</div>
+=======
+
+				<h2>Ajout/Suppression de Commande</h2>
+
+				<a href="liste-commandes.html" id="btnmod">Retour</a>
+
+>>>>>>> 8afaffe08ce5d9ccf41a285233025829868fc146
 			</div>	
 
 			<form action="">
@@ -56,23 +65,23 @@
 					<div class="line">
 						<div class="block">
 							<label for="">Date</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{date}}"/>
 						</div>
 						<div class="block">
 							<label for="">Num Commande</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{numcommande}}"/>
 						</div>
 						<div class="block">
 							<label for="">Num Compte Client</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{numcptclient}}"/>
 						</div>
 						<div class="block">
 							<label for="">Nom Client</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{nomclient}}"/>
 						</div>
 						<div class="block">
 							<label for="">Commercial/Rev</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{commercial}}"/>
 						</div>
 					</div>
 					<div class="line">
@@ -203,7 +212,7 @@
 				<button class="validate">Valider</button>
 
 			</form>	
-
+		{{/test}}	
 		</main>
 		<!-- Antoine -->
 		<script defer src="css/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.js"></script>
