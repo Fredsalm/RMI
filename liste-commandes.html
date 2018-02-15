@@ -3,7 +3,7 @@
 	<head>
 		<!-- fred -->
 		<title>Liste de Commande | Gestion de commande RM Ingénieurie</title>
-		<meta name="viewport" content="width=device-width;initial-scale=1.0">
+<!-- 		<meta name="viewport" content="width=device-width;initial-scale=1.0"> -->
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
@@ -37,7 +37,7 @@
 
 		</header>
 
-		<main>
+		<main id="liste-commande">
 			<div class="main--title">
 				<h2>Liste de Commande</h2><!--  h1 -->
 			</div>	
@@ -50,10 +50,10 @@
 				</form>
 			</div>
 			<div class="filtre">
-				<button class="filtre-adv">ADV</button>
-				<button class="filtre-parametrage">Parametrage</button>
-				<button class="filtre-hardware">Hardware</button>
-				<button class="filtre-logistique">Logistique</button>
+				<button class="filtre-adv active" data-filter="*">ADV</button>
+				<button class="filtre-parametrage" data-filter="parametrage">Parametrage</button>
+				<button class="filtre-hardware" data-filter="hard">Hardware</button>
+				<button class="filtre-logistique" data-filter="logistique">Logistique</button>
 			</div>
 			<div class="tableau-structure">
 				<div class="tableau-content">
@@ -65,7 +65,7 @@
 							No. Commande
 						</div>
 						<div class="titre-tableau--numclient">
-							No. Compte Client
+							No. Cpt Client
 						</div>
 						<div class="titre-tableau--client">
 							Nom Client
