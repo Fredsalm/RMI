@@ -1,40 +1,31 @@
 (function main(){
 
 	$('#liste-commande').each(function(){
+		var $tableau = $('#tableau');
 
 		$.get('bdd.json', {}, function(data){
-
+                console.log("test")
 			for(var i= 0; i<data.commandes.length; i++){
 				var html = '',
 					cmd = data.commandes[i],
-					step = cmd.step,
-					classe = '';
+					step = cmd.step;
 
 				html += '<td class="ref">'+cmd.date+'</td>';
-				html += '<td class="ref">'+cmd.numcommande+'</td>';
-				html += '<td class="ref">'+cmd.numcptclient+'</td>';
-				html += '<td class="ref">'+cmd.nomclient+'</td>';
+				html += '<td class="ref">'+cmd.cmdnumb+'</td>';
+				html += '<td class="ref">'+cmd.accnumb+'</td>';
+				html += '<td class="ref">'+cmd.clientname+'</td>';
 				
 				html += '<td class="chk">';
 				for (var j = 0; j < step.length; j++) {
 					html += '<div class="step ' + (step[j] ? 'ok' : 'wait') + '"></div>';
 				}
 				html += '</td>';
-				html += '<td><a href="./add-change_order.html?c='+cmd.numcommande+'"><button id="btnmod">Modifier</button></a></td>';
+				html += '<td><a href="' + $tableau.data('url') + '?c='+cmd.cmdnumb+'">Modifier</a></td>';
 
-				if(step[3] == 0){
-					classe = "parametrage"
-				} else if(step[4] == 0) {
-					classe = "hard"
-				} else if(step[5] == 0) {
-					classe = "logistique"
-				}	
-
-				$('#tableau').append('<tr class="'+classe+'">' + html + '</tr>')
+				$('tbody', $tableau).append('<tr class="'+cmd.state+'">' + html + '</tr>')
 			};
 		}, 'json');
 
-		var $tableau = $('#tableau');
 		$('.filtre button').on('click', function(){
 			var $b = $(this);
 			var filter = $b.data('filter');
@@ -65,7 +56,7 @@
 
 		$.get('bdd.json', {}, function(data){
 			for(var i=0; i<data.commandes.length; i++){
-				if(data.commandes[i].numcommande == oParametre.c ){
+				if(data.commandes[i].cmdnumb == oParametre.c ){
 					$('.tpl').html(Mustache.render($('.tpl').html(), {test : data.commandes[i]}))
 				}
 			}
