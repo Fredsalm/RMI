@@ -2,28 +2,20 @@
 <html lang="fr">
 	<head>
 		<title>Ajout/Modification | Gestion de commande RM Ingénieurie</title>
-<!-- 		<meta name="viewport" content="width=device-width;initial-scale=1.0"> -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<!-- Antoine -->
 		<header>		
 			<div class="header--border1">
-				<h1>Gestionnaire de commande</h1>
+				<div>
+					<h1>Gestionnaire de commande</h1>					
+				</div>
 			</div>
-			<div class="header--border2"></div>
-
-			<div class="border--logo"></div>
-
-			<div class="logo-header"></div>
-
-			<div class="logo--header"></div>
-
-			<div class="header--border3">
-				<span>Bonjour<span id="user"></span>!</span>
-
-				<ul>
+			<div class="header--border2">
+				<div>
+					<ul>
 					<li>
 						<a href="statistics.html"><i class="fas fa-chart-bar fa-2x"></i></a>
 					</li>
@@ -34,13 +26,15 @@
 						<a href="connexion.html"><i class="fas fa-sign-out-alt fa-2x"></i></a>
 					</li>
 				</ul>
-
+				</div>
 			</div>
-
+			<div class="border--logo"></div>
+			<div class="logo-header"></div>
+			<div class="logo--header"></div>
 		</header>
 		
 		<main id="modif-commande" class="tpl">
-		
+		{{#test}}
 			<div class="main--title">
 				<div class="title--page">
 					<h2>Ajout/Suppression de Commande</h2>
@@ -48,175 +42,189 @@
 				<div class="return">
 					 <a href="liste-commandes.html"><i class="fas fa-reply fa-2x"></i></a>
 				</div>
-
-
-				<!-- <h2>Ajout/Suppression de Commande</h2> -->
-
-				<!-- <a href="liste-commandes.html" id="btnmod">Retour</a>
- -->
-
 			</div>	
 
-			<form action="">
+			<form class="fields-form">
 
-				<fieldset class="line--position">
+				<fieldset class="fields-bloc">
 					<legend>ADV</legend>
-					<div class="line">
+					<div class="line-contener">
 						<div class="block">
 							<label for="">Date</label>
 							<input class="input--modification" type="text" name="" id="" value="{{date}}"/>
 						</div>
 						<div class="block">
 							<label for="">Num Commande</label>
-							<input class="input--modification" type="text" name="" id="" value="{{numcommande}}"/>
+							<input class="input--modification" type="text" name="" id="" value="{{cmdnumb}}"/>
 						</div>
 						<div class="block">
 							<label for="">Num Compte Client</label>
-							<input class="input--modification" type="text" name="" id="" value="{{numcptclient}}"/>
+							<input class="input--modification" type="text" name="" id="" value="{{accnumb}}"/>
 						</div>
 						<div class="block">
 							<label for="">Nom Client</label>
-							<input class="input--modification" type="text" name="" id="" value="{{nomclient}}"/>
+							<input class="input--modification" type="text" name="" id="" value="{{clientname}}"/>
 						</div>
 						<div class="block">
 							<label for="">Commercial/Rev</label>
 							<input class="input--modification" type="text" name="" id="" value="{{commercial}}"/>
 						</div>
-					</div>
-					<div class="line">
 						<div class="block">
 							<label for="urgency">Urgence</label>
-							<input class="input--modification" type="text" name="urgency" id="urgency" value=""/>
-						</div>
+							<select id="urgency" name="urgency">
+								{{#urgency}}
+								
+									<option value="{{val}}" {{selected}}>{{label}}</option>
+
+								{{/urgency}}
+							</select>
+    					</div>
 						<div class="block">
 							<label for="">Info</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{info}}"/>
 						</div>
 						<div class="block">
 							<label for="">Eligible S/T</label>
 							<select class="select--change">
-								<option class="select--yes" value="#">Oui</option>
-								<option class="select--no" value="#">Non</option>
+								{{#eligst}}
+
+									<option value="{{val}}" {{selected}}>{{label}}</option>
+
+								{{/eligst}}
 							</select>
 						</div>
 						<div class="block">
 							<label for="">Validation S/T</label>
-							<select class="select--change">
-								<option value="#">Oui</option>
-								<option class="select--no" value="#">Non</option>
-							</select>
+							<input class="input--modification" type="text" name="" id="" value="{{valist}}"/>
 						</div>
 						<div class="block">
 							<label for="">Réception BCB</label>
 							<select class="select--change">
-								<option class="select--received" value="#">Reçu</option>
-								<option class="select--noreceived" value="#">Non-reçu</option>
+								{{#bcb}}
+
+									<option class="select--received" value="{{val}}" {{selected}}>{{label}}</option>
+								
+								{{/bcb}}
 							</select>
 						</div>
-					</div>	
-					<div class="line">
 						<div class="block">
 							<label for="">Transfert</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{tsft}}"/>
 						</div>
 						<div class="block">
 							<label for="">Couleur Etui</label>
 							<select class="select--change">
-								<option class="select--green" value="#">Vert</option>
-								<option class="select--yellow" value="#">Jaune</option>
-								<option class="select--red" value="#">Rouge</option>
-								<option class="select--black" value="#">Noir</option>
+								{{#color}}
+
+									<option class="select--green" value="{{val}}" {{selected}}>{{label}}</option>
+									
+								{{/color}}
 							</select>
 						</div>
 						<div class="block">
 							<label for="">Crédit</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<select class="select--change">
+								{{#credit}}
+
+									<option class="select--green" value="{{val}}" {{selected}}>{{label}}</option>
+									
+								{{/credit}}	
+							</select>
 						</div>
 						<div class="block">
 							<label for="">Essai</label>
 							<select class="select--change">
-								<option class="select--yes" value="#">Oui</option>
-								<option class="select--no" value="#" selected>Non</option>
+								{{#try}}
+
+									<option class="select--yes" value="{{val}}" {{selected}}>{{label}}</option>
+
+								{{/try}}
 							</select>
 						</div>
 						<div class="block">
 							<label for="">Dest'Livraison</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{destlivraison}}"/>
 						</div>
-					</div>
-					<div class="line">	
 						<div class="block">
-							<label for="">Eko/Simply</label>
+							<label for="">Simply/Eko</label>
 							<select class="select--change">
-								<option class="select--eko" value="#">Eko</option>
-								<option class="select--simply" value="#">Simply</option>
+								{{#ekosimply}}
+
+									<option class="select--eko" value="{{val}}" {{selected}}>{{label}}</option>
+								
+								{{/ekosimply}}		
 							</select>
 						</div>
 						<div class="block">
 							<label for="">Dom-Tom</label>
 							<select class="select--change">
-								<option class="select--yes" value="#">Oui</option>
-								<option class="select--no" value="#">Non</option>
+								{{#domtom}}
+
+									<option class="select--yes" value="{{val}}" {{selected}}>{{label}}</option>
+								
+								{{/domtom}}		
 							</select>
 						</div>
 					</div>	
 				</fieldset>
 
-				<fieldset class="fieldset1--size">
+				<fieldset class="fields-bloc">
 					<legend>Param</legend>
-					<div>
+					<div class="line-contener">
 						<div class="block">
 							<label for="">Param'</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{dateparam}}"/>
 						</div>
 						<div class="block">
 							<label for="">Technicien</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{techparam}}"/>
 						</div>
 					</div>
 				</fieldset>
 
-				<fieldset class="fieldset2--size">	
+				<fieldset class="fields-bloc">	
 					<legend>Hard</legend>
-					<div>
+					<div class="line-contener">
 						<div class="block">
 							<label for="">Prépa</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{datehard}}"/>
 						</div>
 						<div class="block">
 							<label for="">Technicien</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{techhard}}"/>
 						</div>
 					</div>
 				</fieldset>
 
-				<fieldset class="fieldset3--size">
+				<fieldset class="fields-bloc">
 					<legend>Logistique</legend>
-					<div>
+					<div class="line-contener">
 						<div class="block">
 							<label for="">Num Tracking</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{numtrack}}"/>
 						</div>
 						<div class="block">
-							<label for="">Date Expiration</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<label for="">Date Expedition</label>
+							<input class="input--modification" type="text" name="" id="" value="{{expdate}}"/>
 						</div>
 						<div class="block">
 							<label for="">Num Track Retour</label>
-							<input class="input--modification" type="text" name="" id="" value=""/>
+							<input class="input--modification" type="text" name="" id="" value="{{returntracknum}}"/>
 						</div>
 					</div>
 				</fieldset>	
 
-				<button class="validate">Valider</button>
+				<div class="form-valid">
+					<button class="validate" type="submit">Valider</button>
+				</div>
 
 			</form>	
-		
+		{{/test}}
 		</main>
 		<!-- Antoine -->
 		<script defer src="css/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.js"></script>
-		<script src="node_modules/jquery/dist/jquery.min.js"></script>
-		<script src="node_modules/mustache/mustache.min.js"></script>
+		<script src="jquery/dist/jquery.min.js"></script>
+		<script src="mustache/mustache.min.js"></script>
 		<script src="js/app.js"></script>
 	</body>
 </html>

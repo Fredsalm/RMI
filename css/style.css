@@ -56,7 +56,7 @@ body{
 }
 
 .border--logo{
-	border: 1px solid rgb(100, 100, 100, 0.5);
+	border: 1px solid rgba(100, 100, 100, 0.5);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	background-color: rgb(251, 251, 251);
@@ -68,22 +68,29 @@ body{
 }
 
 .header--border1{
-	border: 1px solid rgb(100, 100, 100, 0.5);
+	border: 1px solid rgba(100, 100, 100, 0.5);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	background-color: rgb(44, 129, 218);
 	height: 5em; 
 }
 
-.header--border1 h1{
-	text-align: center;
-	position: relative;
+.header--border1 div h1{
 	color: white;
 	text-transform: uppercase;
+	display: flex;
+	width: 100%;
+	padding-bottom: 3em;
+}
+
+.header--border1 div{
+	margin: auto;
+	display: flex;
+	width: 48%;
 }
 
 .header--border2{
-	border: 1px solid rgb(100, 100, 100, 0.5);
+	border: 1px solid rgba(100, 100, 100, 0.5);
 	background-color: rgb(248, 248, 248);
 	height: 3em;
 	position: relative;
@@ -97,40 +104,44 @@ body{
 	margin-left-bottom: auto;
 	color: white;
 	background-color: rgb(44, 129, 218);
+	display: flex;
+	width: 100%;
+
+}
+.header--border2 div {
+	width: 15%;
+	margin-left: auto;
+	display: flex;
 }
 
-.header--border3{
-	border: 1px solid rgb(100, 100, 100, 0.5);
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background-color: rgb(251, 251, 251);
-	position: absolute;
-	width: 10em;
-	height: 8.5em;
-	right: 2%;
-	top: 0;
-	display: inline-block;
-}
-
-
-.header--border3 ul li{
+.header--border2 div ul {
 	list-style: none;
-	display: inline-block
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+	width: 100%;	
+
 }
 
 
 .main--title{
-	
-	display: inline;
+	margin-top: 1em;
+	display: flex;
 }
 
-.main--title h2{
-	text-align: center;
+.main--title span{
+	display: flex;
+	margin: auto;
+	color: #F7F7F7;
+	font-size: 2.5em;
+	font-family: Impact, Charcoal, sans-serif;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
 }
 
 .main--title a button{
 	color: white;
-	background-color: rgb(44, 129, 218);
+	background-color: ;
 	display:  inline-flex;
 }
 
@@ -151,19 +162,26 @@ body{
 	color: black;	
 }
 
-fieldset{
+.fields-form {
+	display: flex;
+	flex-flow: wrap;
+}
+.fields-bloc {
 	background-color: rgba(100, 100, 100, 0.1);
 }
-
-.fieldset1--size{
-	width: 300px;
-	height: 115px;
+.fields-bloc:not(:first-child) {
+	flex: 1;
+	width: 30%;
+	min-width: 300px;
 }
 
-
-.line--position{
+.line-contener{
 	display: flex;
+	flex-flow: wrap;
 	justify-content: space-between;
+}
+.form-valid {
+	width: 100%;
 }
 
 .block{
@@ -211,7 +229,9 @@ fieldset{
 /* END-PAGE AJOUT/MODIFICATION COMMANDE*/
 
 /*START LISE-COMMANDES*/
-
+.form--search{
+	display: flex;
+}
 .recherche{
 	display: flex;
 	margin-top: 50px;
@@ -220,18 +240,21 @@ fieldset{
 
 .recherche-numero{
 	border:solid 1px black;
-	padding-top: 11px;
-	height: 27px;
-	background-color: rgb(44, 129, 218);
-	padding-left: 5px;
-	padding-right: 5px;
+	background-color: #37AFEA;
+	display: flex;
 }
+.recherche-numero p{
+	display: flex;
+	color: white;
+	margin: auto;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
 .recherche-input{
-	border-radius: 0px;
 	border: 1px solid black;
-	padding-bottom: 7px;
 	padding-left: 10px;
-	background-color: #e7e7e7;
+	background-color: #e2e2e2;
 
 }
 
@@ -260,26 +283,16 @@ fieldset{
 .tableau-content{
 	margin: auto;
 	width: 90%;
+
 }
 
 .tabl{
 	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
 }
 
-tr{
-	display: flex;
-	width: 100%;
-	justify-content: space-around;
-}
-
-.ref{
-	display: flex;
-	border: 1px solid;
-	width: 100%;
-}
-
-.chk{
-	width: 190%;
+td {
 	border: 1px solid;
 }
 
@@ -400,6 +413,18 @@ margin-left: 1.2em;
 .active{
 	font-size: 0.7em;
 	background-color: #E1DCD5;
+}
+
+.red{
+	background-color: red;
+}
+
+.urgency {
+	background-color: #F94E4E;
+}
+
+.try{
+	background-color: yellow;
 }
 /*END PAGE STATISTIQUES*/
 

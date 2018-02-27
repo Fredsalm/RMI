@@ -1,22 +1,45 @@
 {
 	"commandes": [
-		{"date": "12/01/18", 
-		 "cmdnumb": "18927578", 
-		 "accnumb": "8027618", 
-		 "clientname": "Mme Pierre", 
-		 "commercial": "Micka", 
-		 "urgency": true,  
+		{
+		 "date": "29/01/18", 
+		 "cmdnumb": "13823", 
+		 "accnumb": "411034412", 
+		 "clientname": "M. Benjamin", 
+		 "commercial": "Marylin",
+		 "sortable": 1,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
 		 "info": "imprimante", 
-		 "eligst": "Oui", 
-		 "valist": "Oui", 
-		 "bcb": "Reçu", 	 
-		 "tsft": "****", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "2/02", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
 		 "color": "Vert", 
-		 "credit": "Oui", 
-		 "try": true, 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
 		 "destlivraison": "Alliance Santé", 
-		 "ekosimply": "Simply", 
-		 "domtom": "Non",
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
 		 "dateparam": "14/07", 
 		 "techparam": "Jean-Jacques", 
 		 "datehard": "15/07", 
@@ -24,38 +47,1286 @@
 		 "numtrack": "8CJEJ863409", 
 		 "expdate": "17/08", 
 		 "returntracknum": "***",
-		 "step"	: 
-		 		  [1, 
-		 		   1, 
-		 		   1, 
-		 		   0, 
-		 		   0, 
-		 		   0  
-		 		]
+		 "state": "logistique",
+		 "step"	: [1, 1, 1, 1, 1, 0 ]
 		},
-		{"date": "13/01/18",
-		 "numcommande": "18908678",
-		 "numcptclient": "801278218",
-		 "nomclient": "Mme Jacques",
+
+		{
+		 "date": "31/01/18", 
+		 "cmdnumb": "13824", 
+		 "accnumb": "411034413", 
+		 "clientname": "Mme. Sabine", 
+		 "commercial": "LIS", 
+		 "sortable": 3,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "***", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "2/02", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Rouge", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "01/02", 
+		 "techparam": "Pierre", 
+		 "datehard": "15/02", 
+		 "techhard": "Michel", 
+		 "numtrack": "8CJEJ863410", 
+		 "expdate": "19/02", 
+		 "returntracknum": "***",
+		 "state": "logistique",
+		 "step"	: [1, 1, 1, 1, 1, 0 ]
+		},
+		
+		{ 
+		 "date": "02/01/18", 
+		 "cmdnumb": "13825", 
+		 "accnumb": "411034414", 
+		 "clientname": "Mme. Marina", 
+		 "commercial": "Espace", 
+		 "sortable": 2, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "**", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "2/02", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Noir", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "destlivraison": "Revendeur", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "02/02", 
+		 "techparam": "Jean-Jacques", 
+		 "datehard": "**", 
+		 "techhard": "**", 
+		 "numtrack": "**", 
+		 "expdate": "**", 
+		 "returntracknum": "***",
+		 "state": "hard",
+		 "step"	: [1, 1, 1, 1, 0, 0 ]
+		},
+
+		{
+		 "date": "26/01/18", 
+		 "cmdnumb": "13831", 
+		 "accnumb": "411034420", 
+		 "clientname": "Mme.Christine", 
+		 "commercial": "AMR", 
+		 "sortable": 3,		
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "annule et remplace", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "AS", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Anis", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "", 
+		 "techparam": "", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "",
+		 "step"	: [1, 0, 1, 0, 0, 0 ]
+		},
+
+		{
+		 "date": "24/12/17", 
+		 "cmdnumb": "13842", 
+		 "accnumb": "411034430", 
+		 "clientname": "Mme.Talls", 
+		 "commercial": "Jaochim",
+		 "sortable": 3,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "Conserve son ancienne tablette", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "AS", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Rouge", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "05/01", 
+		 "techparam": "Seb", 
+		 "datehard": "07/01", 
+		 "techhard": "Pierre", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "logostique",
+		 "step"	: [1, 1, 1, 1, 1, 0 ]
+		},
+
+		{
+		 "date": "26/12/17", 
+		 "cmdnumb": "13843", 
+		 "accnumb": "411034431", 
+		 "clientname": "M.Sacks", 
+		 "commercial": "Julien",
+		 "sortable": 1,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "Renouv anticipé", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "RM", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Passion", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "05/01", 
+		 "techparam": "Seb", 
+		 "datehard": "07/01", 
+		 "techhard": "Pierre", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "loistique",
+		 "step"	: [0, 1, 1, 1, 1, 0 ]
+		},
+
+		{
+		 "date": "20/12/17", 
+		 "cmdnumb": "13844", 
+		 "accnumb": "411034433", 
+		 "clientname": "Mme.Susk", 
+		 "commercial": "Emilie",
+		 "sortable": 1,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "Renouvellement suite vol", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "RM", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Gris", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "30/12", 
+		 "techparam": "Seb", 
+		 "datehard": "03/01", 
+		 "techhard": "Pierre", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "logistique",
+		 "step"	: [1, 1, 1, 1, 1, 0 ]
+		},
+
+		{
+		 "date": "2/02/18", 
+		 "cmdnumb": "13845", 
+		 "accnumb": "411034435", 
+		 "clientname": "M. Cars", 
+		 "commercial": "PCD", 
+		 "sortable": 3,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "Avec imprimante", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "**", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Mauve", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "**", 
+		 "techparam": "**", 
+		 "datehard": "**", 
+		 "techhard": "**", 
+		 "numtrack": "**", 
+		 "expdate": "**", 
+		 "returntracknum": "***",
+		 "state": "",
+		 "step"	: [0, 0, 0, 0, 0, 0 ]
+		},
+
+		{
+		 "date": "02/02/18", 
+		 "cmdnumb": "13846", 
+		 "accnumb": "411034436", 
+		 "clientname": "M. Doms", 
+		 "commercial": "Micka",
+		 "sortable": 2, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "**", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "Infi+4000", 
+		 "color": "Turquoise", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "**", 
+		 "techparam": "**", 
+		 "datehard": "**", 
+		 "techhard": "**", 
+		 "numtrack": "**", 
+		 "expdate": "**", 
+		 "returntracknum": "***",
+		 "state": "parametrage",
+		 "step"	: [1, 0, 1, 0, 0, 0 ]
+		},
+
+		{
+		 "date": "25/01/18", 
+		 "cmdnumb": "13850", 
+		 "accnumb": "411034440", 
+		 "clientname": "CPAM", 
+		 "commercial": "Greg", 
+		 "sortable": 1,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "PR le 07/02", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "**", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "**", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Greg", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "26/01", 
+		 "techparam": "Seb", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "hard",
+		 "step"	: [0, 0, 1, 1, 0, 0 ]
+		},
+
+		{
+		 "date": "18/01/18", 
+		 "cmdnumb": "13851", 
+		 "accnumb": "411034441", 
+		 "clientname": "Mme.Mers", 
 		 "commercial": "Maxime",
-		 "transfert": "****",
-		 "couleur": "Noir",
-		 "credit": "Oui",
-		 "essai": "non",
-		 "destlivraison": "Alliance Santé",
-		 "step"	: [1,1,1,1,0,0]	
+		 "sortable": 3,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "Conserve son ancienne tablette", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "01/02", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Turquoise", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],
+		 "dateparam": "25/01", 
+		 "techparam": "Seb", 
+		 "datehard": "26/01", 
+		 "techhard": "Pierre", 
+		 "numtrack": "13413FD3Z", 
+		 "expdate": "30/01", 
+		 "returntracknum": "***",
+		 "state": "logistique",
+		 "step"	: [1, 1, 1, 1, 1, 0 ]
 		},
-		{"date": "14/01/18",
-		 "numcommande": "97657578",
-		 "numcptclient": "1627618",
-		 "nomclient": "Mme Dubois",
-		 "commercial": "Timon",
-		 "transfert": "****",
-		 "couleur": "Bleu",
-		 "credit": "non",
-		 "essai": "Oui",
-		 "destlivraison": "Synchosanté",
-		 "step"	: [1,1,1,1,1,0]
+
+		{
+		 "date": "20/01/18", 
+		 "cmdnumb": "13855", 
+		 "accnumb": "411034445", 
+		 "clientname": "M. Porthos", 
+		 "commercial": "Delphin",
+		 "sortable": 3,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "**", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "01/02", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Rouge", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "05/01", 
+		 "techparam": "Seb", 
+		 "datehard": "07/01", 
+		 "techhard": "Pierre", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "logistique",
+		 "step"	: [1, 1, 1, 1, 1, 0 ]
+		},
+
+		{
+		 "date": "21/11/17", 
+		 "cmdnumb": "ANNULATION CDE", 
+		 "accnumb": "411040312", 
+		 "clientname": "Mme. Lea", 
+		 "commercial": "Aliah",
+		 "sortable": 1, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "BR le 22/11 TRES URGENT", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "**", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***" , 
+		 "color": "**", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "destlivraison": "", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "**", 
+		 "techparam": "**", 
+		 "datehard": "**", 
+		 "techhard": "**", 
+		 "numtrack": "**", 
+		 "expdate": "**", 
+		 "returntracknum": "***",
+		 "state": "",
+		 "step"	: [1, 1, 1, 0, 0, 0 ]
+		},
+
+		{
+		 "date": "21/12/17", 
+		 "cmdnumb": "131301", 
+		 "accnumb": "411045314", 
+		 "clientname": "Mme.Léa", 
+		 "commercial": "Aliah",
+		 "sortable": 1, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "Reçu matos le 27/12", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "", 
+		 "bcb": "", 	 
+		 "tsft": "***" , 
+		 "color": "", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "27/10", 
+		 "techparam": "Seb", 
+		 "datehard": "15/01", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "13/11", 
+		 "returntracknum": "***",
+		 "state": "hard",
+		 "step"	: [1, 1, 1, 1, 0, 0 ]
+		},
+
+		{
+		 "date": "20/10/17", 
+		 "cmdnumb": "131302", 
+		 "accnumb": "411035314", 
+		 "clientname": "M. Henrique", 
+		 "commercial": "Salon",
+		 "sortable": 2, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "Br envoyé le 23/11, taupe sylyca", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  	 
+		 "tsft": "***", 
+		 "color": "", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "destlivraison": "8V66168759075", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "27/10", 
+		 "techparam": "Seb", 
+		 "datehard": "", 
+		 "techhard": "Retour suite depart sans €", 
+		 "numtrack": "", 
+		 "expdate": "13/11", 
+		 "returntracknum": "***",
+		 "state": "hard",
+		 "step"	: [1, 1, 1, 1, 0, 0 ]
+		},
+
+		{
+		 "date": "15/11/17", 
+		 "cmdnumb": "131324", 
+		 "accnumb": "411034987", 
+		 "clientname": "Mme.Laurence", 
+		 "commercial": "Jaochim",
+		 "sortable": 1,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "Br le 16/11", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "AS", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "", 
+		 "techparam": "", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "",
+		 "step"	: [1, 1, 0, 0, 0, 0 ]
+		},
+
+		{
+		 "date": "14/12/17", 
+		 "cmdnumb": "13877", 
+		 "accnumb": "411034477", 
+		 "clientname": "Mme.Lucie", 
+		 "commercial": "Jaochim",
+		 "sortable": 2,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "Reçu matos le 18/12, la cliente nous la renvoie", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "", 
+		 "techparam": "", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "",
+		 "step"	: [1, 1, 1, 0, 0, 0 ]
+		},
+
+		{
+		 "date": "22/12/17", 
+		 "cmdnumb": "13878", 
+		 "accnumb": "411034478", 
+		 "clientname": "M. Philippe", 
+		 "commercial": "Micka",
+		 "sortable": 1, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "Reçu matos le 08/01, URGENT", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "", 
+		 "techparam": "", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "",
+		 "step"	: [1, 1, 0, 0, 0, 0 ]
+		},
+
+		{
+		 "date": "17/01/18", 
+		 "cmdnumb": "13879", 
+		 "accnumb": "411034479", 
+		 "clientname": "Mme.Lucie", 
+		 "commercial": "Brigitt",
+		 "sortable": 1,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "Br le 22/01 PR fin février", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "", 
+		 "techparam": "", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "",
+		 "step"	: [1, 1, 1, 0, 0, 0 ]
+		},
+
+		{
+		 "date": "29/01/18", 
+		 "cmdnumb": "13880", 
+		 "accnumb": "411034480", 
+		 "clientname": "Mme.Joceline", 
+		 "commercial": "Emilie",
+		 "sortable": 1,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "Materiel à préparer", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "02/02" , 
+		 "techparam": "Lucie", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "hard",
+		 "step"	: [1, 1, 1, 1, 0, 0 ]
+		},
+
+		{
+		 "date": "07/12/17", 
+		 "cmdnumb": "13877+ 12", 
+		 "accnumb": "411034478", 
+		 "clientname": "Mme. Pierre", 
+		 "commercial": "Micka",
+		 "sortable": 2, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "Recup le 12/02 Prévenir JMM quand", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "Mme. Cathy BC" , 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Rouge" , 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "destlivraison": "JMM", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "22/12", 
+		 "techparam": "Georges", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "hard",
+		 "step"	: [1, 1, 1, 1, 0, 0 ]
+		},
+
+		{
+		 "date": "07/12/17", 
+		 "cmdnumb": "13877+ 13", 
+		 "accnumb": "411034479", 
+		 "clientname": "Mme. Paul", 
+		 "commercial": "Micka",
+		 "sortable": 1, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "7/02 Prévenir JMM quand", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "RM" , 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Rouge" , 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "destlivraison": "JMM", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "22/12", 
+		 "techparam": "Georges", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "hard",
+		 "step"	: [1, 1, 1, 1, 0, 0 ]
+		},
+
+		{
+		 "date": "07/12/17", 
+		 "cmdnumb": "13877+ 14", 
+		 "accnumb": "411034480", 
+		 "clientname": "Mme. James", 
+		 "commercial": "Micka",
+		 "sortable": 1, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "Recup le 12/02 Prévenir JMM quand", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "RM" , 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Rouge" , 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "JMM", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "22/12", 
+		 "techparam": "Georges", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "hard",
+		 "step"	: [1, 1, 1, 1, 0, 0 ]
+		},
+
+		{
+		 "date": "31/01/18", 
+		 "cmdnumb": "13785", 
+		 "accnumb": "4115764445", 
+		 "clientname": "M. Jacques", 
+		 "commercial": "Allianc",
+		 "sortable": 1,
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ],  
+		 "info": "TRES URGENT" , 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "01/02", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Noir", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "05/02", 
+		 "techparam": "Seb", 
+		 "datehard": "07/02", 
+		 "techhard": "Pierre", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "logistique",
+		 "step"	: [1, 1, 1, 1, 1, 0 ]
+		},
+
+		{
+		 "date": "22/12/17", 
+		 "cmdnumb": "17855", 
+		 "accnumb": "411454445", 
+		 "clientname": "M. Pires", 
+		 "commercial": "Micka/N",
+		 "sortable": 3, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "Chronopost Prévenir JMM quand tablette ok", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "valist": "RM", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Anis", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "", 
+		 "techparam": "", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "parametrage",
+		 "step"	: [1, 1, 1, 0, 0, 0 ]
+		},
+
+		{
+		 "date": "22/12/17", 
+		 "cmdnumb": "17955", 
+		 "accnumb": "411455445", 
+		 "clientname": "M. Josz", 
+		 "commercial": "Aliah",
+		 "sortable": 3, 
+		 "urgency": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],  
+		 "info": "Liv pour le 20/02/2018", 
+		 "eligst": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "valist": "AS", 
+		 "bcb": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 	 
+		 "tsft": "***", 
+		 "color": "Gris", 
+		 "credit": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "try": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ], 
+		 "destlivraison": "Client", 
+		 "ekosimply": [ 
+			 {"val": "yes", "label": "Oui", "selected": "selected" },
+	         {"val": "no", "label": "Non", "selected": "" }
+		 ], 
+		 "domtom": [ 
+			 {"val": "yes", "label": "Oui", "selected": "" },
+	         {"val": "no", "label": "Non", "selected": "selected" }
+		 ],
+		 "dateparam": "", 
+		 "techparam": "", 
+		 "datehard": "", 
+		 "techhard": "", 
+		 "numtrack": "", 
+		 "expdate": "", 
+		 "returntracknum": "***",
+		 "state": "parametrage",
+		 "step"	: [1, 1, 1, 0, 0, 0 ]
 		}
+		
+
+		
 	]
 }
